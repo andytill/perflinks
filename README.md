@@ -16,3 +16,7 @@ Nuggets of erlang performance wisdom, from those kind enough to share.
  + [erlgrind](https://github.com/isacssouza/erlgrind) converts fprof output into valgrind format that can be visualised using [KCacheGrind](http://kcachegrind.sourceforge.net/html/Home.html).
 
 This is still a WIP.
+
+## Beyond OTP
+
+ + [Slides](http://ninenines.eu/talks/beyond-otp/beyond-otp.html)
