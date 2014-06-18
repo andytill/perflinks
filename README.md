@@ -15,8 +15,15 @@ Nuggets of erlang performance wisdom, from those kind enough to share.
  + [Quick start](http://timanovsky.wordpress.com/2009/01/20/profiling-running-erlang-server/)
  + [erlgrind](https://github.com/isacssouza/erlgrind) converts fprof output into valgrind format that can be visualised using [KCacheGrind](http://kcachegrind.sourceforge.net/html/Home.html).
 
-This is still a WIP.
-
 ## Beyond OTP
 
+Loïc Hoguin achieves LOLSPEED in cowboy by ditching OTP behaviours and rolling his own, OTP compliant processes in critical parts of the code.
+
  + [Slides](http://ninenines.eu/talks/beyond-otp/beyond-otp.html)
+ + [Video presentation](http://youtu.be/fyobN-6YyJY)
+
+## Networking
+
+ + [inet options](http://www.erlang.org/doc/man/inet.html#setopts-2)
+
+This is still a WIP.
