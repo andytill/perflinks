@@ -26,4 +26,11 @@ Loïc Hoguin achieves LOLSPEED in cowboy by ditching OTP behaviours and rolling 
 
  + [inet options](http://www.erlang.org/doc/man/inet.html#setopts-2)
 
+## Message Batching
+
+@ostinelli benchmarks message batching inside application code (as opposed to the TCP stack).
+
+ + [Blog](http://www.ostinelli.net/boost-message-passing-between-erlang-nodes/)
+ + [Code](https://github.com/davide/erlang_mq_boost)
+
 This is still a WIP.
