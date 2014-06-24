@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,10 +19,7 @@
       <header>
         <h1>Perflinks</h1>
         <p>Links to nuggets of erlang performance wisdom.</p>
-
         <p class="view"><a href="https://github.com/andytill/perflinks">View the Project on GitHub <small>andytill/perflinks</small></a></p>
-
-
         <ul>
           <li><a href="https://github.com/andytill/perflinks/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/andytill/perflinks/tarball/master">Download <strong>TAR Ball</strong></a></li>
@@ -29,16 +28,55 @@
       </header>
       <section>
         <h1>
-<a name="perflinks" class="anchor" href="#perflinks"><span class="octicon octicon-link"></span></a>perflinks</h1>
+<a name="erlang-performance-links" class="anchor" href="#erlang-performance-links"><span class="octicon octicon-link"></span></a>Erlang Performance Links</h1>
 
-<p>Links to nuggets of erlang performance wisdom.</p>
+<p>Nuggets of erlang performance wisdom, from those kind enough to share.</p>
+
+<h2>
+<a name="eprof" class="anchor" href="#eprof"><span class="octicon octicon-link"></span></a>EProf</h2>
+
+<p><a href="http://www.erlang.org/doc/man/eprof.html">eprof</a> attaches to a running process and and can produces a flat list of functions that are most called, and took the most time.</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/a/4354188/1673868">Quick start</a></li>
+</ul><h2>
+<a name="fprof" class="anchor" href="#fprof"><span class="octicon octicon-link"></span></a>FProf</h2>
+
+<p><a href="http://www.erlang.org/doc/man/fprof.html">fprof</a> attaches to a running process, like eprof but gives a hierarchical breakdown of function calls counts and their total time.  Useful when there are several calls throughout a process but it is not clear which one is taking the most time.</p>
+
+<ul>
+<li><a href="http://timanovsky.wordpress.com/2009/01/20/profiling-running-erlang-server/">Quick start</a></li>
+<li>
+<a href="https://github.com/isacssouza/erlgrind">erlgrind</a> converts fprof output into valgrind format that can be visualised using <a href="http://kcachegrind.sourceforge.net/html/Home.html">KCacheGrind</a>.</li>
+</ul><h2>
+<a name="beyond-otp" class="anchor" href="#beyond-otp"><span class="octicon octicon-link"></span></a>Beyond OTP</h2>
+
+<p>Loïc Hoguin achieves LOLSPEED in cowboy by ditching OTP behaviours and rolling his own, OTP compliant processes in critical parts of the code.</p>
+
+<ul>
+<li><a href="http://ninenines.eu/talks/beyond-otp/beyond-otp.html">Slides</a></li>
+<li><a href="http://youtu.be/fyobN-6YyJY">Video presentation</a></li>
+</ul><h2>
+<a name="networking" class="anchor" href="#networking"><span class="octicon octicon-link"></span></a>Networking</h2>
+
+<ul>
+<li><a href="http://www.erlang.org/doc/man/inet.html#setopts-2">inet options</a></li>
+</ul><h2>
+<a name="message-batching" class="anchor" href="#message-batching"><span class="octicon octicon-link"></span></a>Message Batching</h2>
+
+<p><a href="https://github.com/ostinelli" class="user-mention">@ostinelli</a> benchmarks message batching inside application code (as opposed to the TCP stack).</p>
+
+<ul>
+<li><a href="http://www.ostinelli.net/boost-message-passing-between-erlang-nodes/">Blog</a></li>
+<li><a href="https://github.com/davide/erlang_mq_boost">Code</a></li>
+</ul><p>This is still a WIP.</p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/andytill">andytill</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/andytill">andytill</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
